@@ -1,4 +1,7 @@
 # 🗣️ NikoTalk AI
+## 🚀 Live Demo
+
+👉 [Try NikoTalk AI](https://nikotalk-ai-p9qi2mgejs4ww8apvngx7k.streamlit.app/)
 
 NikoTalk AI is an English communication learning application built using Python and Streamlit.
 
