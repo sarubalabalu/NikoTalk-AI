@@ -16,10 +16,6 @@ def load_styles():
         f"""
         <style>
 
-        /* =========================================
-           GLOBAL - MINIMIZED DESKTOP LAYOUT
-        ========================================= */
-
         .stApp {{
             background: {BACKGROUND};
         }}
@@ -44,9 +40,9 @@ def load_styles():
             padding: 0 !important;
         }}
 
-        /* =========================================
+        /* =========================
            HERO
-        ========================================= */
+           ========================= */
 
         .hero {{
             position: relative;
@@ -117,9 +113,9 @@ def load_styles():
             background: transparent;
         }}
 
-        /* =========================================
-           SECTION HEADING
-        ========================================= */
+        /* =========================
+           SECTION HEADINGS
+           ========================= */
 
         .section-heading {{
             color: {DARK};
@@ -135,9 +131,9 @@ def load_styles():
             margin: 0 0 15px 0;
         }}
 
-        /* =========================================
-           CARDS
-        ========================================= */
+        /* =========================
+           HOME CARDS
+           ========================= */
 
         .card {{
             position: relative;
@@ -176,9 +172,9 @@ def load_styles():
             max-width: 340px;
         }}
 
-        /* =========================================
-           BUTTONS
-        ========================================= */
+        /* =========================
+           HOME BUTTONS
+           ========================= */
 
         .home-button {{
             margin-top: -48px;
@@ -232,11 +228,31 @@ def load_styles():
             color: white !important;
         }}
 
-        /* =========================================
-           RESPONSIVE
-        ========================================= */
+        /* =========================
+           RADIO BUTTON TEXT FIX
+           ========================= */
+
+        /* Make radio option text dark and visible */
+        [data-testid="stRadio"] label {{
+            color: #172348 !important;
+        }}
+
+        [data-testid="stRadio"] label p {{
+            color: #172348 !important;
+            font-size: 15px !important;
+            font-weight: 500 !important;
+        }}
+
+        [data-testid="stRadio"] [data-testid="stMarkdownContainer"] p {{
+            color: #172348 !important;
+        }}
+
+        /* =========================
+           RESPONSIVE DESIGN
+           ========================= */
 
         @media (max-width: 900px) {{
+
             .block-container {{
                 padding-left: 15px;
                 padding-right: 15px;
@@ -253,6 +269,7 @@ def load_styles():
         }}
 
         @media (max-width: 700px) {{
+
             .hero {{
                 height: 155px;
             }}
